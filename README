@@ -1,0 +1,39 @@
+Jeeves is a very flexible application code generator. Its design
+is extremely simple, but thanks to perl (perl 5), it packs quite
+a punch.
+
+The convenient thing about Jeeves is that unlike other code generators
+I have seen, it does not prescribe a specification language - if you
+have a parser for it, you can automatically generate a ton of code.
+What code do you generate? Again, Jeeves leaves that up to you - you
+fill in a template, and it does the rest.
+
+If the above was not clear, then I recommend you read doc/jeeves.ps.
+It gives details about code generation and the way Jeeves is structured. 
+
+I don't have any time at all right now to create a reasonable user
+manual; I do hope to fulfil this gap in the not-too-distant-future.
+
+Meanwhile,
+
+1. Read the document above.
+2. In the examples/oo directory, assuming you are running csh,
+   type "source run", and if it works for you , you should
+   see *.C files. Compare that to the template.
+   The example is explained in Jeeves.ps.
+3. jeeves -h gives a usage.
+
+I have tons of examples, but unfortunately I can't give them away
+because the specification languages in those examples are somewhat
+proprietary, and themselves would require too much documentation.
+
+Suffice it to say that Jeeves is powerful enough to easily handle
+automatic code generation off of CORBA IDL files. Again, I'd love
+to make this public, but at this point I'd get into legal trouble 
+with my employer if I do that.
+
+Please let me know if you find Jeeves useful.
+
+-Sriram
+(sriram@tcs.com) - June 1996
+

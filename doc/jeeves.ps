@@ -1,0 +1,6339 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 5.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 5.0, for use with Frame 5.0 products
+% This ps_prolog file is Copyright (c) 1986-1995 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameMaker/SGML and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% FrameMaker users specify the proper paper size for each print job in the
+% "Print" dialog's "Printer Paper Size" "Width" and "Height~ fields.  If the
+% printer that the PS file is sent to does not support the requested paper
+% size, or if there is no paper tray of the proper size currently installed, 
+% then the job will not be printed.  The following flag, if set to true, will
+% cause the job to print on the default paper in such cases.
+/FMAllowPaperSizeMismatch            false def
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to true, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% The following is a set of predefined optimal frequencies and angles for various
+% common dpi settings. This is taken from "Advances in Color Separation Using
+% PostScript Software Technology," from Adobe Systems (3/13/89 P.N. LPS 0043)
+% and corrolated with information which is in various PPD (4.0) files.
+%
+% The "dpiranges" figure is the minimum dots per inch device resolution which
+% can support this setting. The "low" and "high" values are controlled by the
+% setting of the FMUseHighFrequencyScreens flag above. The "TDot" flags control
+% the use of the "Yellow Triple Dot" feature whereby the frequency id divided by
+% three, but the dot function is "trippled" giving a block of 3x3 dots per cell.
+%
+% PatFreq is a compromise pattern frequency for ps Level 2 printers which is close
+% to the ideal WYSIWYG pattern frequency of 9 repetitions/inch but does not beat
+% (too badly) against the screen frequencies of any separations for that DPI.
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (5.0) def 
+/fMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	fMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto show
+	72 220 moveto show
+	FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!  Check installation;)
+		(also check ~/fminit and ./fminit for old versions) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(Adobe's PostScript Language Reference Manual, 2nd Edition, section H.2.4)
+	(says your EPS file is not valid, as it calls X              )
+	dup dup (X) search pop exch pop exch pop length 
+	5 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/fmConcatProcs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin [
+	/ALDsave
+	/FMdicttop
+	/FMoptop
+	/FMpointsize
+	/FMsaveobject
+	/b
+	/bitmapsave
+	/blut
+	/bpside
+	/bs
+	/bstring
+	/bwidth
+	/c
+	/cf
+	/cs
+	/cynu
+	/depth
+	/edown
+	/fh
+	/fillvals
+	/fw
+	/fx
+	/fy
+	/g
+	/gfile
+	/gindex
+	/grnt
+	/gryt
+	/gstring
+	/height
+	/hh
+	/i
+	/im
+	/indx
+	/is
+	/k
+	/kk
+	/landscape
+	/lb
+	/len
+	/llx
+	/lly
+	/m
+	/magu
+	/manualfeed
+	/n
+	/offbits
+	/onbits
+	/organgle
+	/orgbangle
+	/orgbfreq
+	/orgbproc
+	/orgbxfer
+	/orgfreq
+	/orggangle
+	/orggfreq
+	/orggproc
+	/orggxfer
+	/orgmatrix
+	/orgproc
+	/orgrangle
+	/orgrfreq
+	/orgrproc
+	/orgrxfer
+	/orgxfer
+	/pagesave
+	/paperheight
+	/papersizedict
+	/paperwidth
+	/pos
+	/pwid
+	/r
+	/rad
+	/redt
+	/sl
+	/str
+	/tran
+	/u
+	/urx
+	/ury
+	/val
+	/width
+	/width
+	/ws
+	/ww
+	/x
+	/x1
+	/x2
+	/xindex
+	/xpoint
+	/xscale
+	/xx
+	/y
+	/y1
+	/y2
+	/yelu
+	/yindex
+	/ypoint
+	/yscale
+	/yy
+] { 0 def } forall
+/FmBD {bind def} bind def
+systemdict /pdfmark known {
+	/fMAcrobat true def
+	
+	/FmPD /pdfmark load def
+	
+	
+	/FmPT /show load def
+	
+	
+	currentdistillerparams /CoreDistVersion get 2000 ge {
+	
+		
+		/FmPD2 /pdfmark load def
+		
+		
+		
+		
+		
+		/FmPA { mark exch /Dest exch 5 3 roll 
+				/View [ /XYZ null 6 -2 roll FmDC exch pop null] /DEST FmPD 
+		}FmBD
+	} {
+		
+		/FmPD2 /cleartomark load def
+		/FmPA {pop pop pop}FmBD
+	} ifelse
+} {
+	
+	/fMAcrobat false def
+	/FmPD /cleartomark load def
+	/FmPD2 /cleartomark load def
+	/FmPT /pop load def
+	/FmPA {pop pop pop}FmBD
+} ifelse
+/FmDC {
+	transform fMDefaultMatrix itransform cvi exch cvi exch
+}FmBD
+/FmBx {
+	dup 3 index lt {3 1 roll exch} if 
+	1 index 4 index lt {4 -1 roll 3 1 roll exch 4 1 roll} if
+}FmBD
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/fMNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		RealSetrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+fMLevel1 { 
+	
+	
+	
+	/patScreenDict 7 dict dup begin
+		<0f1e3c78f0e1c387> [ 45  { pop } {exch pop} 		.5   2 sqrt] FmBD
+		<0f87c3e1f0783c1e> [ 135 { pop } {exch pop}			.5   2 sqrt] FmBD
+		<cccccccccccccccc> [ 0   { pop } dup				.5   2	   ] FmBD
+		<ffff0000ffff0000> [ 90  { pop } dup				.5   2	   ] FmBD
+		<8142241818244281> [ 45  { 2 copy lt {exch} if pop}	dup .75  2 sqrt] FmBD
+		<03060c183060c081> [ 45  { pop } {exch pop}			.875 2 sqrt] FmBD
+		<8040201008040201> [ 135 { pop } {exch pop}			.875 2 sqrt] FmBD
+	end def
+} { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} ifelse
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				fMAcrobat not FMPColor graymode and and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not fMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/fMDefaultMatrix matrix defaultmatrix def
+/fMatrix2 matrix def
+/dpi    72 0 fMDefaultMatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 fMDefaultMatrix dtransform exch atan def
+	sangle fMatrix2 rotate 
+	fMDefaultMatrix fMatrix2 concatmatrix 
+	dup 0 get /sflipx exch def
+	    3 get /sflipy exch def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	fMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /fMNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	fMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{papersizefailure} if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{2 dict
+		 dup /PageSize [paperwidth paperheight] put
+		 manualfeed {dup /ManualFeed manualfeed put} if
+		 {setpagedevice} stopped {papersizefailure} if
+		}
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			fMNegative {
+				1 1 4 { 
+					pop { 1 exch sub } fmConcatProcs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		fMNegative {
+			{ 1 exch sub } fmConcatProcs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/papersizefailure {
+	FMAllowPaperSizeMismatch not
+		{
+(The requested paper size is not available in any currently-installed tray)
+(Edit the PS file to "FMAllowPaperSizeMismatch true" to use default tray)
+		 FMFAILURE } if
+	} def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYK } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYKGRAY } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+fMLevel1 {
+	/fmGetFlip {
+		fMatrix2 exch get mul 0 lt { -1 } { 1 } ifelse
+	} FmBD
+} if
+/setPatternMode {
+	fMLevel1 {
+		2 index patScreenDict exch known {
+			pop pop
+			patScreenDict exch get aload pop 
+			freq 								
+			mul									
+			5 2 roll							
+			fMatrix2 currentmatrix 1 get 0 ne {
+				3 -1 roll 90 add 3 1 roll 		
+				sflipx 1 fmGetFlip sflipy 2 fmGetFlip neg mul
+			} {  								
+				sflipx 0 fmGetFlip sflipy 3 fmGetFlip mul 
+			} ifelse
+			0 lt {exch pop} {pop} ifelse 		
+			fMNegative { 
+				{neg} fmConcatProcs 			
+			} if
+			bind
+			
+			
+			
+			systemdict /setscreen get exec		
+			/FrameCurGray exch def
+		} {
+			/bwidth  exch def
+			/bpside  exch def
+			/bstring exch def
+			/onbits 0 def  /offbits 0 def
+			freq sangle landscape {90 add} if 
+				{/ypoint exch def
+				 /xpoint exch def
+				 /xindex xpoint 1 add 2 div bpside mul cvi def
+				 /yindex ypoint 1 add 2 div bpside mul cvi def
+				 bstring yindex bwidth mul xindex 8 idiv add get
+				 1 7 xindex 8 mod sub bitshift and 0 ne fMNegative {not} if
+				 {/onbits  onbits  1 add def 1}
+				 {/offbits offbits 1 add def 0}
+				 ifelse
+				}
+				setscreen
+			offbits offbits onbits add div fMNegative {1.0 exch sub} if
+			/FrameCurGray exch def
+		} ifelse
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		fMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode fMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode fMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/rip4 { 
+	   
+	  
+	  kis cis copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  cis mis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  mis yis copy pop 
+	  dup dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  yis kis copy pop 
+	  3 mul is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+/wbytes { 
+      dup dup
+      8 gt { pop 8 idiv mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	cvtProc                
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def 
+	cvtProc              
+	/is width depth wbytes string def
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+fMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/kk cynu magu min yelu min def
+		/u kk currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 kk currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch fmConcatProcs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def
+	fMLevel1 {	
+		colorsetup
+		/is width depth wbytes string def
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is width depth wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	fMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {ip} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/depth 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip pop ris} {gis} {bis} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCMYKc { 
+	/depth 32 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip4 pop cis} {mis} {yis} {kis} true 4 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYK { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /mis width string def
+        /yis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf mis readhexstring pop } 
+        { cf yis readhexstring pop } 
+        { cf kis readhexstring pop } 
+        true 4 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/depth 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop ris gis bis width gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAYc { 
+	/depth 32 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop cis mis yis kis width cgray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/cgray { 
+        /ww exch def
+        /k exch def
+        /y exch def
+        /m exch def
+        /c exch def
+        0 1 ww 1 sub { /i exch def c i get m i get y i get k i get CMYKtoRGB
+				.144 mul 3 1 roll .587 mul 3 1 roll .299 mul add add
+				c i 3 -1 roll floor cvi put } for
+        c
+ 		} bind def
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop width gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /yis width string def
+        /mis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf mis readhexstring pop 
+          cf yis readhexstring pop 
+          cf kis readhexstring pop width cgray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(5.0) FMVERSION
+1 1 0 0 612 792 0 1 13 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-Roman FMFONTDEFINE
+2 0 /Courier FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Courier-Oblique FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 692 540 702 C
+0 0 0 1 0 0 0 K
+72 701 540 701 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 18 Q
+0 X
+0 0 0 1 0 0 0 K
+(J) 122.25 708 T
+(ee) 130.98 708 T
+(v) 146.69 708 T
+(es) 155.51 708 T
+0 14.4 Q
+(1) 170.51 715.2 T
+0 18 Q
+( - A Con\336gurable A) 177.71 708 T
+(pplication Generator) 328.26 708 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+(Sriram Srini) 270.28 667.33 T
+(v) 319.2 667.33 T
+(asan) 323.95 667.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TCSI,) 293.92 655.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Berk) 266.45 643.33 T
+(ele) 285.8 643.33 T
+(y) 297.3 643.33 T
+(, CA, USA) 301.65 643.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(sriram@tcs.com) 273.2 631.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cop) 232.5 619.33 T
+(yright \2511995, Sriram Srini) 249.07 619.33 T
+(v) 356.98 619.33 T
+(asan) 361.73 619.33 T
+0 0 0 1 0 0 0 K
+72 574 540 584 C
+0 0 0 1 0 0 0 K
+72 583 540 583 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.) 72 588.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Abstract) 99 588.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+0.49 (This paper discusses the bene\336ts of automatically generating application code, and discusses) 90 558 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.28 (Jee) 90 544 P
+0.28 (v) 105.02 544 P
+0.28 (es, a simple yet po) 110.84 544 P
+0.28 (werful application generator written in Perl [18]. Jee) 200.65 544 P
+0.28 (v) 454.23 544 P
+0.28 (es is a) 460.05 544 P
+0.28 (v) 489.69 544 P
+0.28 (ailable in) 495.39 544 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the public domain.) 90 530 T
+0 0 0 1 0 0 0 K
+72 484 540 494 C
+0 0 0 1 0 0 0 K
+72 493 540 493 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(2.) 72 498.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Intr) 99 498.67 T
+(oduction) 122.86 498.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+1.51 (Programmers rarely write entire applications from scratch. There are a number of w) 90 468 P
+1.51 (ays in) 510.16 468 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.45 (which e) 90 454 P
+2.45 (xisting code is le) 129.93 454 P
+2.45 (v) 217.99 454 P
+2.45 (eraged. Cutting and pasting code is probably one of the most) 223.82 454 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.79 (e) 90 440 P
+0.79 (x) 95.15 440 P
+0.79 (ercised options \050though the least f) 100.97 440 P
+0.79 (ashionable!\051. This w) 267.09 440 P
+0.79 (orks well if one needs to cobble up) 366.86 440 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.25 (something quickly) 90 426 P
+1.25 (, b) 179.48 426 P
+1.25 (ut ends up being a signi\336cant amount of re-w) 192.49 426 P
+1.25 (ork if the ne) 419.72 426 P
+1.25 (w project is) 481.5 426 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.99 (merely similar) 90 412 P
+0.99 (, and not identical. When programmers start seeing patterns of usage in what) 160.17 412 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.51 (the) 90 398 P
+0.51 (y are cutting and pasting, the) 104.48 398 P
+0.51 (y b) 245.5 398 P
+0.51 (uild libraries. Object oriented languages such as C++ and) 260.77 398 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Smalltalk gi) 90 384 T
+(v) 148.04 384 T
+(e more po) 153.86 384 T
+(wer and structure to the b) 201.55 384 T
+(uilding of libraries.) 323.62 384 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.32 (There are a couple of issues with this code-reuse approach that are seldom discussed. One) 90 365 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.14 (problem with abstracting lar) 90 351 P
+0.14 (ge amounts of functionality into a set of libraries is that there is a) 225.86 351 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.45 (tendenc) 90 337 P
+0.45 (y to abstract some pieces of functionality too soon [9]; sometimes what looks lik) 127.14 337 P
+0.45 (e an) 519.89 337 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.82 (emer) 90 323 P
+2.82 (ging pattern may only be applicable to a narro) 113.77 323 P
+2.82 (w class of applications. Features or) 357.29 323 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.63 (assumptions such as these tend to limit the o) 90 309 P
+1.63 (v) 316.23 309 P
+1.63 (erall generality of the library) 322.05 309 P
+1.63 (. One sees this) 465.77 309 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.83 (problem especially in libraries which are designed before the designer has accumulated) 90 295 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.38 (enough e) 90 281 P
+0.38 (xperience from the implementation of a number of similar applications. As libraries) 133.86 281 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.62 (gro) 90 267 P
+0.62 (w) 105.7 267 P
+0.62 (, the focus shifts from pro) 113.58 267 P
+0.62 (viding mechanism only) 240.5 267 P
+0.62 (, to pro) 353.63 267 P
+0.62 (viding mechanism and polic) 389.03 267 P
+0.62 (y -) 526.38 267 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.11 (the notion of frame) 90 253 P
+3.11 (w) 191.36 253 P
+3.11 (orks. Frame) 199.9 253 P
+3.11 (w) 260.04 253 P
+3.11 (orks are good for rapid implementation of tailorable) 268.58 253 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.84 (solutions in a gi) 90 239 P
+3.84 (v) 177.57 239 P
+3.84 (en application domain, b) 183.39 239 P
+3.84 (ut when the domain changes, man) 313.33 239 P
+3.84 (y of the) 495.66 239 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(assumptions made in the original domain rear up.) 90 225 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(2.1.) 72 197 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Code Generation as a method of r) 106 197 T
+(euse) 279.1 197 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+1.66 (Automatic generation of code is another approach, although it doesn\325) 90 178 P
+1.66 (t get as much media) 437.36 178 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.26 (co) 90 164 P
+-0.26 (v) 101.15 164 P
+-0.26 (erage. The central idea here is to generate a body of code from a high le) 106.97 164 P
+-0.26 (v) 447.37 164 P
+-0.26 (el domain speci\336c) 453.19 164 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.71 (language [4,5]. When the applications programmer changes the speci\336cations, the generated) 90 150 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.15 (code re\337ects that change. T) 90 136 P
+1.15 (ak) 225.27 136 P
+1.15 (e the follo) 236.48 136 P
+1.15 (wing database schema de\336nition \050a special purpose) 287.14 136 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(speci\336cation language\051, for instance.) 90 122 T
+0 0 0 1 0 0 0 K
+72 96 540 111 C
+0 0 0 1 0 0 0 K
+81 109 225 109 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+1 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.) 90 89.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Jee) 102 89.33 T
+(v) 114.52 89.33 T
+(es is the ef) 119.37 89.33 T
+(\336cient b) 161.61 89.33 T
+(utler in P) 193.91 89.33 T
+(.G. W) 229.47 89.33 T
+(odehouse\325) 252.83 89.33 T
+(s no) 293.38 89.33 T
+(v) 309.62 89.33 T
+(els, who does all the w) 314.47 89.33 T
+(ork for his b) 405.47 89.33 T
+(umbling master) 454.43 89.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(with at most a twitch of an e) 102 77.33 T
+(yebro) 215.45 77.33 T
+(w) 237.97 77.33 T
+(.) 244.54 77.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(1:) 108 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(employee {) 126 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 701.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(key int employee_id;) 144 701.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 689.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(string name;) 144 689.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 677.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int salary;) 144 677.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5:) 108 665.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 128 665.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+0.98 (There is suf) 90 647 P
+0.98 (\336cient information in this declaration to produce a signi\336cant amount of \322base\323) 148.3 647 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(database code to create, delete, update and retrie) 90 633 T
+(v) 321.95 633 T
+(e database records, such as,) 327.77 633 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 620.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int create_employee_table\050\051 {) 126 620.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 608.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(exec sql create table employee_table \050employee_id integer,) 144 608.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 596.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(name varchar, salary integer\051;) 180 596.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 584.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 128 584.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5:) 108 572.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int create_employee \050employee *e\051) 128 572.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(6:) 108 560.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(e->employee_id = ++g_employee_id;) 144 560.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(7:) 108 548.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(exec sql insert into table employee_table \050employee_id,) 144 548.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(8:) 108 536.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(name, salary\051 values \050:*e\051;) 180 536.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(9:) 108 524.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 128 524.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+-0.17 (The programmer responsible for this system only needs to \336ll in the code that is speci\336c to the) 90 506 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.75 (emplo) 90 492 P
+0.75 (yee class, such as v) 119.88 492 P
+0.75 (alidations. If a ne) 215.54 492 P
+0.75 (w \336eld were to be added to the emplo) 300.79 492 P
+0.75 (yee object,) 487.27 492 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.26 (the code generator w) 90 478 P
+0.26 (ould automatically propag) 190.95 478 P
+0.26 (ate this change to all the pieces of code where) 317.4 478 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the attrib) 90 464 T
+(utes are being enumerated by name.) 132.76 464 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.17 (Ho) 90 445 P
+2.17 (w does this tie in with \322reuse\323? In the e) 104.36 445 P
+2.17 (xample abo) 312.68 445 P
+2.17 (v) 370.32 445 P
+2.17 (e, the) 376.14 445 P
+0 0 0 1 0 0 0 K
+444.79 443.8 409.47 443.8 2 L
+V
+0.6 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.17 (generic) 409.47 445 P
+2.17 ( w) 444.79 445 P
+2.17 (ork done by the) 458.5 445 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.2 (programmer w) 90 431 P
+0.2 (as to create a code generator \050maybe a simple a) 161.06 431 P
+0.2 (wk script\051 - that w) 389.61 431 P
+0.2 (ork is reused) 478.28 431 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(e) 90 417 T
+(v) 95.03 417 T
+(ery time a ne) 100.85 417 T
+(w class or a ne) 162.86 417 T
+(w \336eld is introduced.) 233.21 417 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.67 (There are se) 90 398 P
+2.67 (v) 153.66 398 P
+2.67 (eral commercial tools for OO CASE, GUI b) 159.48 398 P
+2.67 (uilding etc. that pro) 389.2 398 P
+2.67 (vide code) 491.01 398 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.15 (generation capabilities. One problem with most of these tools is that the generated code w) 90 384 P
+-0.15 (orks) 519.34 384 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.07 (well for a prototype \050to get things up and running\051 b) 90 370 P
+0.07 (ut has problems coe) 340.44 370 P
+0.07 (xisting with code that) 436.12 370 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.08 (goes into the \322real\323 project. The reason is that no matter what code is produced, it is bound to) 90 356 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0 (ha) 90 342 P
+-0 (v) 101.09 342 P
+-0 (e certain assumptions that simply don\325) 106.91 342 P
+-0 (t w) 291.66 342 P
+-0 (ork in particular en) 306.54 342 P
+-0 (vironments. Another problem) 397.69 342 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.39 (is that most code generators are capable of producing code only for a gi) 90 328 P
+0.39 (v) 438.36 328 P
+0.39 (en set of languages,) 444.18 328 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(such as C or C++.) 90 314 T
+0 0 0 1 0 0 0 K
+72 268 540 278 C
+0 0 0 1 0 0 0 K
+72 277 540 277 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(3.) 72 282.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Code Generation: Pr) 99 282.67 T
+(os and Cons) 223.95 282.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+-0.08 (The adv) 90 252 P
+-0.08 (antages of automatic application generation ha) 128.61 252 P
+-0.08 (v) 351.6 252 P
+-0.08 (e been well documented else) 357.42 252 P
+-0.08 (where [3,) 494.77 252 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4, 10].) 90 238 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.05 (As with all tools or idioms, care must be tak) 90 219 P
+0.05 (en to interpret an) 302.31 219 P
+0.05 (y claims of massi) 383.92 219 P
+0.05 (v) 467.43 219 P
+0.05 (e producti) 473.26 219 P
+0.05 (vity) 521.33 219 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(increases [7]. T) 90 205 T
+(oo much of a good thing isn\325) 163.34 205 T
+(t.) 301.79 205 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.03 (It can be ar) 90 186 P
+0.03 (gued that code generation results in se) 143.51 186 P
+0.03 (v) 326.67 186 P
+0.03 (ere code bloat - surely there is a temptation) 332.49 186 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.25 (to simply generate duplicate code than to abstract observ) 90 172 P
+-0.25 (ed patterns of beha) 360.44 172 P
+-0.25 (vior into classes or) 450.42 172 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.44 (libraries. Kno) 90 158 P
+1.44 (wing ho) 157.13 158 P
+1.44 (w much to generate and ho) 197.27 158 P
+1.44 (w much to abstract out is something of a) 333.82 158 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(black art.) 90 144 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.01 (Code generation is v) 90 125 P
+2.01 (ery useful where enumeration is required. F) 194.83 125 P
+2.01 (or instance, when one is) 416.32 125 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.47 (generating embedded SQL code, one has no option b) 90 111 P
+0.47 (ut to enumerate each attrib) 347.8 111 P
+0.47 (ute by name.) 477.41 111 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.37 (This is simple and easily deb) 90 97 P
+1.37 (ugged. The alternati) 235.6 97 P
+1.37 (v) 334.34 97 P
+1.37 (e is to create a meta-data scheme where) 340.16 97 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.89 (each object is capable of describing itself, then the required sql code could be created) 90 83 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+0 X
+0 0 0 1 0 0 0 K
+0.25 (dynamically) 90 712 P
+0.25 (. \050Of course, if you needed a meta-data scheme an) 148.55 712 P
+0.25 (yw) 390.87 712 P
+0.25 (ay) 405.41 712 P
+0.25 (, one could code-generate) 415.96 712 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.47 (all the pieces of code to support the meta-data scheme!\051. Another e) 90 698 P
+0.47 (xample of enumeration is) 416.27 698 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(that of C++ iostream code to automatically tak) 90 684 T
+(e care of an object\325) 313.73 684 T
+(s I/O, lik) 405.02 684 T
+(e this:) 447.24 684 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 671.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ostream& operator << \050ostream& out, Employee &e\051 {) 126 671.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 659.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(out << \322Employee\323 << id << << name << salary ;) 144 659.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 647.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 128 647.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(This code is easily generated automatically) 90 629 T
+(.) 296.18 629 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.7 (C++ programmers often use templates \050C++ templates\051 and cpp macros to achie) 90 610 P
+0.7 (v) 482.12 610 P
+0.7 (e the same) 487.94 610 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.66 (goals of code abstraction and reuse. Ne) 90 596 P
+3.66 (v) 299.93 596 P
+3.66 (ertheless, it is useful to remember that code) 305.75 596 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.88 (generation is yet another idiom, which coe) 90 582 P
+0.88 (xists easily with all these approaches. I often use) 299.37 582 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.93 (code generation to prototype an approach, and then ease some of the functionality into a) 90 568 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(library) 90 554 T
+(. This mak) 121.21 554 T
+(es it easy to see patterns of usage of the library-to-be.) 172.09 554 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.09 (Code generation is useful in cases where there is a de\336ned approach to solving a problem. F) 90 535 P
+-0.09 (or) 530 535 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.47 (e) 90 521 P
+0.47 (xample, the OPLA project [1] is implementing a mapping between the Object Model of the) 95.15 521 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.4 (OMT methodology and the C++ language - once a reasonable mapping is decided, a code) 90 507 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.3 (generator is used to instantly transform a logical design to a \336rst-cut ph) 90 493 P
+-0.3 (ysical implementation.) 428.27 493 P
+0 0 0 1 0 0 0 K
+72 447 540 457 C
+0 0 0 1 0 0 0 K
+72 456 540 456 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(4.) 72 461.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Desirable F) 99 461.67 T
+(eatur) 167.47 461.67 T
+(es of an A) 199.1 461.67 T
+(pplication Generator) 257.47 461.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+(4.1.) 72 423 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Flexibility of output) 106 423 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+1.26 (The application generator should not be packaged to produce a \336x) 90 404 P
+1.26 (ed set of code. The user) 419.72 404 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(should ha) 90 390 T
+(v) 136.09 390 T
+(e total control of the code to be produced.) 141.91 390 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(4.2.) 72 362 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Flexibility of input) 106 362 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+0.25 (If the input speci\336cation language changes, it should be relati) 90 343 P
+0.25 (v) 386.59 343 P
+0.25 (ely simple to change the tool\325) 392.41 343 P
+0.25 (s) 535.33 343 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(input parser) 90 329 T
+(.) 146.33 329 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(4.3.) 72 301 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Flexibility of ar) 106 301 T
+(chitectur) 185.12 301 T
+(e) 230.88 301 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+2.07 (The tw) 90 282 P
+2.07 (o requirements abo) 125.61 282 P
+2.07 (v) 221.55 282 P
+2.07 (e suggest an architecture where the input parser and the code) 227.37 282 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(generator are decoupled, as sho) 90 268 T
+(wn in the \336gure belo) 240.65 268 T
+(w) 339.67 268 T
+(.) 347.56 268 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+(Figur) 144 100.33 T
+(e 1.) 167.71 100.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Code Generator Ar) 198 100.33 T
+(chitectur) 281.13 100.33 T
+(e) 319.27 100.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+1.54 (The decoupling should be such that it is easy to mak) 90 77 P
+1.54 (e changes to one component without) 356.64 77 P
+0 0 0 1 0 0 0 K
+72 72 540 720 C
+151.88 113 460.12 245 C
+0 0 0 1 0 0 0 K
+262.12 158.5 352.12 178.5 R
+5 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+2 Z
+N
+262.12 181.5 352.12 201.5 R
+V
+N
+1 12 Q
+0 X
+(Input P) 277.96 187.41 T
+(arser) 312.79 187.41 T
+(Code Generator) 268.97 164.91 T
+(Speci\336cation/Problem De\336nition) 227.96 232.82 T
+(Generated Code) 268.3 119.6 T
+307.12 220.53 307.12 219.2 2 L
+0 Z
+N
+307.12 219.2 310.1 220.28 307.12 209.91 304.15 220.28 4 Y
+N
+307.12 219.2 310.1 220.28 307.12 209.91 304.15 220.28 4 Y
+V
+307.12 227 307.12 220.53 2 L
+2 Z
+N
+307.12 142.53 307.12 141.2 2 L
+0 Z
+N
+307.12 141.2 310.1 142.28 307.12 131.91 304.15 142.28 4 Y
+N
+307.12 141.2 310.1 142.28 307.12 131.91 304.15 142.28 4 Y
+V
+307.12 149 307.12 142.53 2 L
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+255.62 153 358.62 207 R
+N
+0 0 0 1 0 0 0 K
+151.88 113 460.12 245 R
+2 H
+0 Z
+4 X
+N
+72 72 540 720 C
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+0 X
+0 0 0 1 0 0 0 K
+-0.15 (necessarily ha) 90 712 P
+-0.15 (ving to touch the other) 157.25 712 P
+-0.15 (. F) 264.64 712 P
+-0.15 (or e) 276.97 712 P
+-0.15 (xample, an IDL compiler creates custom code for a) 294.96 712 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.51 (distrib) 90 698 P
+0.51 (uted object en) 120.43 698 P
+0.51 (vironment. What if instead of generating code, one w) 188.29 698 P
+0.51 (anted to generate a) 448.18 698 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.08 (trof) 90 684 P
+-0.08 (f document? In a properly structured IDL compiler) 107.03 684 P
+-0.08 (, the front end \050which kno) 350.24 684 P
+-0.08 (ws about IDL) 474.18 684 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.26 (syntax\051 remains the same, and the "code generating" back) 90 670 P
+1.26 (end is replaced with another that) 377.38 670 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(produces a pretty document with dif) 90 656 T
+(ferent fonts for k) 263.34 656 T
+(e) 344.2 656 T
+(yw) 349.34 656 T
+(ords.) 363.89 656 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(4.4.) 72 628 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Simplicity) 106 628 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+("Let\325) 90 609 T
+(s not mak) 114.23 609 T
+(e it simple, b) 160.78 609 T
+(ut let\325) 222.54 609 T
+(s mak) 250.21 609 T
+(e it simpler" - Einstein) 278.42 609 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.38 (Creeping featurism and o) 90 590 P
+2.38 (v) 218.59 590 P
+2.38 (er) 224.41 590 P
+2.38 (-generality are tw) 233.49 590 P
+2.38 (o problems af) 322.76 590 P
+2.38 (\337icting code generators - the) 393.2 590 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.09 (do) 90 576 P
+0.09 (wnside is the amount of documentation that needs to be read \050and produced\051, as well as the) 101.7 576 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.05 (amount of protocol to which one needs to adhere to, to change an) 90 562 P
+1.05 (y aspect of the tool. This) 416.07 562 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(applies to tools in general.) 90 548 T
+0 0 0 1 0 0 0 K
+72 502 540 512 C
+0 0 0 1 0 0 0 K
+72 511 540 511 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(5.) 72 516.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(J) 99 516.67 T
+(ee) 105.79 516.67 T
+(v) 118.01 516.67 T
+(es) 124.87 516.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+-0.01 (Jee) 90 486 P
+-0.01 (v) 105.02 486 P
+-0.01 (es is an application generator that has been used in a v) 110.84 486 P
+-0.01 (ariety of areas - producing code for) 370.76 486 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.57 (database, client-serv) 90 472 P
+1.57 (er and \336nite state machines, tcl/tk and UIL \336les from high le) 189.36 472 P
+1.57 (v) 496.27 472 P
+1.57 (el input) 502.1 472 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(speci\336cations, man pages and html documents from C++ and schema \336les, etc.) 90 458 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Jee) 90 439 T
+(v) 105.02 439 T
+(es\325 architecture is sho) 110.84 439 T
+(wn in the \336gure belo) 214.85 439 T
+(w) 313.87 439 T
+(.) 321.76 439 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+(Figur) 144 233.33 T
+(e 2.) 167.71 233.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(J) 198 233.33 T
+(ee) 202.85 233.33 T
+(v) 211.58 233.33 T
+(es Ar) 216.48 233.33 T
+(chitectur) 238.79 233.33 T
+(e) 276.93 233.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+2.04 (All components of the code generator are written in Perl \050v) 90 210 P
+2.04 (ersion 5, that supports object) 393.51 210 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(oriented constructs, and nested data structures\051, and or) 90 196 T
+(g) 350.72 196 T
+(anized as Perl modules.) 356.66 196 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.04 (There are tw) 90 177 P
+4.04 (o inputs to the code generator) 158.59 177 P
+4.04 (. One is a \336le containing the application) 320.42 177 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.32 (speci\336cation, called the speci\336cation \336le, such as a database schema. The other is a \336le) 90 163 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(containing a template of the code that needs to be generated. This is the template \336le.) 90 149 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.06 (The speci\336cation parser parses the speci\336cation \336le and produces a \050domain speci\336c\051 abstract) 90 130 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.96 (syntax tree \050AST\051. The template parser parses the template \336le, and translates it to an) 90 116 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.03 (intermediate perl \336le. This intermediate code when e) 90 102 P
+0.03 (v) 343.16 102 P
+0.03 (aluated at run time \050Perl supports a run-) 348.86 102 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(time \322e) 90 88 T
+(v) 124.69 88 T
+(al\323 function similar to Lisp\051, tra) 130.39 88 T
+(v) 282.8 88 T
+(erses the AST and produces the necessary output.) 288.62 88 T
+0 0 0 1 0 0 0 K
+72 72 540 720 C
+84.12 246 527.88 416 C
+0 0 0 1 0 0 0 K
+113.33 379.5 194.33 406.5 R
+2 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+2 Z
+N
+250.8 300.59 352.3 324.59 R
+5 X
+V
+N
+250.8 332.05 352.3 356.05 R
+V
+N
+250.8 363.5 352.3 387.5 R
+V
+N
+1 12 Q
+0 X
+(Speci\336cation P) 253.73 339.95 T
+(arser) 325.88 339.95 T
+(T) 262.82 308.5 T
+(emplate P) 269.31 308.5 T
+(arser) 316.79 308.5 T
+(T) 157.06 309.5 T
+(emplate File) 163.55 309.5 T
+(Speci\336cation File) 138.88 339.5 T
+(Intermediate Perl code) 390.93 309.5 T
+(Abstract Syntax T) 390.93 339.5 T
+(ree) 477.83 339.5 T
+(Generated code) 390.93 277.88 T
+247.3 294.5 355.8 391.5 R
+N
+(AST module) 270.72 370.5 T
+(Jee) 287.06 395.5 T
+(v) 302.09 395.5 T
+(es) 307.91 395.5 T
+233.41 341.5 234.44 341.5 2 L
+0 Z
+N
+234.44 341.5 233.66 343.65 241.16 341.5 233.66 339.35 4 Y
+N
+234.44 341.5 233.66 343.65 241.16 341.5 233.66 339.35 4 Y
+V
+224.06 341.5 233.41 341.5 2 L
+2 Z
+N
+233.41 311.5 234.44 311.5 2 L
+0 Z
+N
+234.44 311.5 233.66 313.65 241.16 311.5 233.66 309.35 4 Y
+N
+234.44 311.5 233.66 313.65 241.16 311.5 233.66 309.35 4 Y
+V
+224.06 311.5 233.41 311.5 2 L
+2 Z
+N
+374.28 341.5 375.31 341.5 2 L
+0 Z
+N
+375.31 341.5 374.53 343.65 382.02 341.5 374.53 339.35 4 Y
+N
+375.31 341.5 374.53 343.65 382.02 341.5 374.53 339.35 4 Y
+V
+351.93 341.5 374.28 341.5 2 L
+2 Z
+N
+374.28 311.5 375.31 311.5 2 L
+0 Z
+N
+375.31 311.5 374.53 313.65 382.02 311.5 374.53 309.35 4 Y
+N
+375.31 311.5 374.53 313.65 382.02 311.5 374.53 309.35 4 Y
+V
+351.93 311.5 374.28 311.5 2 L
+2 Z
+N
+412.93 328.15 412.93 327.12 2 L
+0 Z
+N
+412.93 327.12 415.08 327.9 412.93 320.41 410.78 327.9 4 Y
+N
+412.93 327.12 415.08 327.9 412.93 320.41 410.78 327.9 4 Y
+V
+412.93 333.5 412.93 328.15 2 L
+2 Z
+N
+412.93 297.04 412.93 296.01 2 L
+0 Z
+N
+412.93 296.01 415.08 296.79 412.93 289.3 410.78 296.79 4 Y
+N
+412.93 296.01 415.08 296.79 412.93 289.3 410.78 296.79 4 Y
+V
+412.93 302.39 412.93 297.04 2 L
+2 Z
+N
+115.56 376.5 196.56 403.5 R
+5 X
+V
+N
+0 X
+(Speci\336cation) 123.23 393.21 T
+(P) 121.57 381.21 T
+(arser Library) 128.07 381.21 T
+119.55 257.39 200.55 284.39 R
+2 X
+V
+N
+121.56 254.5 202.56 281.5 R
+5 X
+V
+N
+0 X
+(T) 139.82 271.21 T
+(emplate) 146.31 271.21 T
+(Library) 144.07 259.21 T
+146.91 311.19 147.93 311.35 2 L
+0 Z
+3 X
+N
+147.93 311.35 146.84 313.34 154.54 312.36 147.49 309.11 4 Y
+N
+147.93 311.35 146.84 313.34 154.54 312.36 147.49 309.11 4 Y
+V
+130.44 290.5 M
+ 130.44 300.02 136.94 309.65 146.91 311.19 D
+2 Z
+N
+185.54 365.54 184.93 366.37 2 L
+0 Z
+N
+184.93 366.37 183.67 364.47 180.97 371.77 187.12 367.01 4 Y
+N
+184.93 366.37 183.67 364.47 180.97 371.77 187.12 367.01 4 Y
+V
+262.44 352.5 M
+ 227.19 352.5 193.75 354.35 185.54 365.54 D
+2 Z
+N
+0 0 0 1 0 0 0 K
+84.12 246 527.88 416 R
+2 H
+0 Z
+4 X
+N
+72 72 540 720 C
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+0 X
+0 0 0 1 0 0 0 K
+0.36 (The template parser translates the template \336le to perl code in one pass. Experience with this) 90 712 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.77 (tool has sho) 90 698 P
+0.77 (wn that the template \336le usually gets modi\336ed at the be) 148.59 698 P
+0.77 (ginning of a project, b) 421.48 698 P
+0.77 (ut) 530.66 698 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.51 (once a pattern of code is established, this \336le is rarely touched. The speci\336cation \336le usually) 90 684 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.77 (sees a lot more change. The template \336le can then be reused for other projects. I maintain a) 90 670 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.01 (library of speci\336cation parsers and template \336les - Jee) 90 656 P
+1.01 (v) 356.41 656 P
+1.01 (es allo) 362.23 656 P
+1.01 (ws both to be changed on the) 393.94 656 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(command line.) 90 642 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(5.1.) 72 614 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(J) 106 614 T
+(ee) 111.82 614 T
+(v) 122.3 614 T
+(es Usage) 128.18 614 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+3.68 (The e) 90 595 P
+3.68 (xample belo) 120.49 595 P
+3.68 (w sho) 182.86 595 P
+3.68 (ws a sample OO schema \336le \050Project.sc\051, and a template \336le) 214.58 595 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.51 (\050Project.template\051 that produces C++ classes \050\336les Emplo) 90 581 P
+1.51 (yee.h and Dept.h\051 from the input) 375.46 581 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(schema) 90 567 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+294.65 546.8 90 546.8 2 L
+V
+0.6 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(File: project.sc \050Schema/Speci\336cation \336le\051) 90 548 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 535.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(class Employee {) 126 535.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 523.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int id;) 144 523.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 511.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(string name;) 144 511.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 499.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 128 499.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5:) 108 487.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(6:) 108 475.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(class Dept {) 128 475.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(7:) 108 463.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(string name;) 144 463.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(8:) 108 451.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(intList employees;) 144 451.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(9:) 108 439.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 128 439.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+206.99 419.8 90 419.8 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(File: project.template \050T) 90 421 T
+0 0 0 1 0 0 0 K
+266.47 419.8 206.15 419.8 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(emplate \336le\051) 206.15 421 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 408.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@FOREACH classList) 126 408.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 396.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@OPENFILE $className.h) 128 396.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 384.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(class $className {) 128 384.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 372.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(private:) 128 372.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5:) 108 360.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@FOREACH attrList) 128 360.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(6:) 108 348.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+($attrType _$attrName;) 144 348.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(7:) 108 336.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@END) 128 336.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(8:) 108 324.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(public:) 128 324.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(9:) 108 312.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@FOREACH attrList) 128 312.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(10:) 108 300.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+($attrType get_$attrName\050\051;) 144 300.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(11:) 108 288.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@IF $isListType) 128 288.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(12:) 108 276.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(virtual int add_to_$attrName\050$listElementType *a\051;) 144 276.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(13:) 108 264.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(virtual int delete_from_$attrName\050$listElementType a\051;) 144 264.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(14:) 108 252.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@ELSE) 128 252.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(15:) 108 240.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(virtual int set_$attrName\050$attrType a$attrName\051;) 144 240.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(16:) 108 228.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@ENDIF) 128 228.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(17:) 108 216.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@END) 128 216.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(18:) 108 204.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(};) 128 204.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(19:) 108 192.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@END .. of classList) 128 192.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+186.35 172.8 90 172.8 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(Output File : Emplo) 90 174 T
+0 0 0 1 0 0 0 K
+211.88 172.8 186.23 172.8 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(yee.h) 186.23 174 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 161.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(class Employee {) 126 161.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 149.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(private:) 128 149.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 137.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int _id;) 144 137.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 125.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(string _name;) 144 125.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5:) 108 113.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(public:) 128 113.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(6:) 108 101.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int get_id \050\051;) 144 101.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(7:) 108 89.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(virtual int set_id \050int aid\051;) 144 89.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(8:) 108 77.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(string get_name \050\051;) 144 77.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(9:) 108 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(virtual int set_name \050string aname\051;) 144 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(10:) 108 701.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(};) 128 701.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+186.67 681.8 90 681.8 2 L
+V
+0.6 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(Output File : Dept.h) 90 683 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 670.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(class Dept {) 126 670.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 658.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(private:) 128 658.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 646.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(string _name;) 144 646.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 634.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(intList _employees;) 144 634.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5:) 108 622.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(public:) 128 622.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(6:) 108 610.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(virtual int set_id \050intList aid\051;) 144 610.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(7:) 108 598.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int get_id \050\051;) 144 598.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(8:) 108 586.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(virtual int add_to_employees\050int a\051;) 144 586.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(9:) 108 574.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(virtual int delete_from_employees \050int a\051;) 144 574.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(10:) 108 562.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(};) 128 562.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+149.66 542.8 90 542.8 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(Running Jee) 90 544 T
+0 0 0 1 0 0 0 K
+155.36 542.8 149.36 542.8 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(v) 149.36 544 T
+0 0 0 1 0 0 0 K
+165.18 542.8 155.18 542.8 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(es) 155.18 544 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(csh> jeeves -s OOSchema -T Project.template Project.sc) 108 531.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Translated Project.template to Project.template.pl) 108 519.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Parsed Project.sc) 108 507.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(csh> ls *.h) 108 495.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Dept.h) 108 483.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Employee.h) 162 483.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(OOSchema, in the abo) 90 465 T
+(v) 198.47 465 T
+(e e) 204.29 465 T
+(xample, is a speci\336cation parser module.) 217.76 465 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The formats of the \336les are e) 90 446 T
+(xplained in the follo) 227.78 446 T
+(wing sections.) 324.48 446 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(5.2.) 72 418 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(F) 106 418 T
+(ormats and Syntax) 113.03 418 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5.2.1.) 72 390 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Abstract Syntax T) 116 390 T
+(r) 209.11 390 T
+(ee \050AST\051 F) 214.22 390 T
+(ormat) 269.24 390 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(The AST is a set of AST nodes or) 90 371 T
+(g) 252.43 371 T
+(anized and interconnected as sho) 258.37 371 T
+(wn in the \336gure belo) 416.03 371 T
+(w) 515.05 371 T
+(.) 522.94 371 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+(Figur) 144 139.33 T
+(e 3.) 167.71 139.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Sample Abstract Syntax T) 198 139.33 T
+(r) 309.76 139.33 T
+(ee) 314.02 139.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+2.42 (Each AST node is simply an object with a list of slots, or properties \050name-v) 90 116 P
+2.42 (alue pairs) 491.26 116 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(implemented in perl as an internal hash table\051. Fig. 3  sho) 90 102 T
+(ws the AST for the e) 365.34 102 T
+(xample abo) 464.81 102 T
+(v) 520.28 102 T
+(e.) 526.1 102 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.29 (The v) 90 83 P
+1.29 (alue of a property is a scalar \050a single number) 118.65 83 P
+1.29 (, string, or a reference to another AST) 348.7 83 P
+0 0 0 1 0 0 0 K
+72 72 540 720 C
+90.5 152 521.5 348 C
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(classList) 137 314.5 T
+(attrT) 366 314.25 T
+(ype) 382.78 314.25 T
+(string) 423 314.25 T
+(attrName) 366 324.5 T
+(name) 423 324.5 T
+(isListT) 366 304 T
+(ype) 390.79 304 T
+(0) 423 304 T
+(attrT) 366 267.25 T
+(ype) 382.78 267.25 T
+(int) 423 267.25 T
+(attrName) 366 277.5 T
+(id) 423 277.5 T
+(isListT) 366 257 T
+(ype) 390.79 257 T
+(0) 423 257 T
+(className - Dept) 220 220.59 T
+(attrList) 220 210.34 T
+(attrT) 366 219.25 T
+(ype) 382.78 219.25 T
+(string) 423 219.25 T
+(attrName) 366 229.5 T
+(name) 423 229.5 T
+(isListT) 366 209 T
+(ype) 390.79 209 T
+(0) 423 209 T
+(attrT) 366 172.25 T
+(ype) 382.78 172.25 T
+(intList) 423 172.25 T
+(attrName) 366 182.5 T
+(emplo) 423 182.5 T
+(yees) 445.41 182.5 T
+(isListT) 366 162 T
+(ype) 390.79 162 T
+(1) 423 162 T
+132.5 306.5 189.5 331.5 R
+0.5 H
+2 Z
+N
+361.5 299.06 464.5 335.06 R
+N
+202.5 316.5 202.5 217 2 L
+2 H
+3 X
+N
+181.5 316.5 210.5 316.5 2 L
+N
+202.5 217.5 212.5 217.5 2 L
+N
+350.28 329.28 350.28 266.5 2 L
+N
+350.28 266.06 360.28 266.06 2 L
+N
+350.28 229.61 350.28 166.83 2 L
+N
+350.28 166.39 360.28 166.39 2 L
+N
+0 X
+(R) 133 333 T
+(OO) 138.64 333 T
+(T) 151.28 333 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+361.5 251.06 464.5 287.06 R
+0.5 H
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+361.5 203.05 464.5 239.05 R
+N
+361.5 155.83 464.5 191.83 R
+N
+350.28 329.06 360.28 329.06 2 L
+2 H
+3 X
+N
+350.28 232.39 360.28 232.39 2 L
+N
+211.5 204.05 314.5 231.05 R
+0.5 H
+0 X
+N
+264.61 209.61 349 209.61 2 L
+2 H
+3 X
+N
+0 X
+(className - Dept) 220 317.59 T
+(attrList) 220 307.34 T
+211.5 301.05 314.5 328.05 R
+0.5 H
+N
+264.61 309.28 349 309.28 2 L
+2 H
+3 X
+N
+0 0 0 1 0 0 0 K
+90.5 152 521.5 348 R
+0 Z
+4 X
+N
+72 72 540 720 C
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(node\051, or it is an array of references to AST nodes.) 90 712 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.67 (The speci\336cation parser is responsible for creating this tree, and passing the root of this tree) 90 693 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.64 (\050in a global v) 90 679 P
+0.64 (ariable \322R) 155.3 679 P
+0.64 (OO) 204.45 679 P
+0.64 (T\323\051 to the intermediate perl code. Neither the template parser nor) 221.29 679 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.29 (the intermediate perl code kno) 90 665 P
+0.29 (w about the structure of this tree, or the names of properties of) 236.85 665 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(an) 90 651 T
+(y node.) 101.15 651 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.43 (It is important to note that the user who creates and modi\336es the template \336le \050Project.sc\051) 90 632 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.81 (should kno) 90 618 P
+1.81 (w the structure of the AST and what properties to e) 144.51 618 P
+1.81 (xpect at each node. In the) 408.34 618 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.45 (e) 90 604 P
+0.45 (xample abo) 95.15 604 P
+0.45 (v) 151.07 604 P
+0.45 (e, the template writer) 156.89 604 P
+3 F
+0.45 (has) 263.67 604 P
+1 F
+0.45 ( to kno) 280.33 604 P
+0.45 (w that the list of classes is kno) 314.27 604 P
+0.45 (wn as classList,) 463.44 604 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(each element of which has properties lik) 90 590 T
+(e className, attrList etc.) 283.84 590 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(5.2.2.) 72 562 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(T) 116 562 T
+(emplate File Syntax) 122.9 562 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+1.11 (The template \336le is a mixture of control statements \050all lines starting with \322@\323\051 and actual) 90 543 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.9 (lines to be output \050those without the \322@\323\051, referred to as \322template code\323. Lines 1 and 2 in) 90 529 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.26 (Project.template are e) 90 515 P
+2.26 (xamples of control statements, and lines 3, 12, 13 are e) 198.65 515 P
+2.26 (xamples of) 484.74 515 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(template code.) 90 501 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.13 (The control statements allo) 90 482 P
+0.13 (w tra) 220.41 482 P
+0.13 (v) 244.62 482 P
+0.13 (ersal of the abstract syntax tree. The template code is output) 250.44 482 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.74 (as is, with v) 90 468 P
+2.74 (ariable interpolations. When an AST node is visited, its properties become) 155.27 468 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(a) 90 454 T
+(v) 95.09 454 T
+(ailable as v) 100.79 454 T
+(ariables that can be referred to as $) 154.48 454 T
+3 F
+(variable) 322.08 454 T
+1 F
+( or ${) 362.08 454 T
+3 F
+(variable) 389.83 454 T
+1 F
+(}.) 429.83 454 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The follo) 90 435 T
+(wing control k) 134.03 435 T
+(e) 203.9 435 T
+(yw) 209.05 435 T
+(ords are supported) 223.6 435 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 99 416 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+2.84 (@OPENFILE) 109 416 P
+4 F
+2.84 (filename [options]) 183.84 416 P
+1 F
+1.18 (- all subsequent template code statements are) 316.28 416 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(simply sent to this \336le, until another) 109 402 T
+2 F
+(@OPENFILE) 285.02 402 T
+1 F
+( is encountered. Options are) 349.82 402 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(-append) 117 388 T
+1 F
+( - open the \336le in append mode) 167.4 388 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(-noOverWrite) 117 374 T
+1 F
+( - do not o) 203.4 374 T
+(v) 252.55 374 T
+(erwrite the \336le if it already e) 258.37 374 T
+(xists.) 394.82 374 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(This is useful if you) 422.83 374 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(w) 150 360 T
+(ant to generate the \336le only once.) 158.54 360 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(-onlyIfDifferent) 117 346 T
+1 F
+( - puts all the output into a temp \336le,) 232.2 346 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+4.91 (dif) 409.87 346 P
+4.91 (fs) 422.33 346 P
+1 F
+4.91 ( this temp \336le with) 430.33 346 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(\336lename) 144 332 T
+1 F
+(, and o) 184.66 332 T
+(v) 216.8 332 T
+(erwrites the latter if the tw) 222.62 332 T
+(o) 349.48 332 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7.22 (\336les dif) 358.48 332 P
+7.22 (fer - useful in a mak) 401.73 332 P
+7.22 (e) 534.67 332 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(en) 144 318 T
+(vironment, where you) 154.85 318 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.02 ( don\325) 260.5 318 P
+0.02 (t w) 285.3 318 P
+0.02 (ant to unnecessarily touch) 300.2 318 P
+3 F
+0.02 (\336lename) 428.28 318 P
+1 F
+0.02 ( if the contents) 468.94 318 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(are the same, to preserv) 144 304 T
+(e timestamps.) 257.45 304 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 99 285 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.39 (@//) 109 285 P
+1 F
+-0.16 ( - A comment - this line does not get output. Used for commenting the template itself.) 130.6 285 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 99 266 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.42 (@FOREACH) 109 266 P
+4 F
+0.42 (var [perl condition code]) 174.22 266 P
+2 F
+0.42 (... @END) 355.46 266 P
+1 F
+0.17 ( - This loops through each) 413.48 266 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.87 (element of) 109 252 P
+3 F
+0.87 (var) 164.72 252 P
+1 F
+0.87 ( \050It is assumed that) 180.72 252 P
+3 F
+0.87 (var) 278.71 252 P
+1 F
+0.87 ( is an array\051, gi) 294.71 252 P
+0.87 (v) 370.19 252 P
+0.87 (en that the \050optional\051 condition is) 376.01 252 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.53 (true for each iteration. In the e) 109 238 P
+1.53 (xample,) 263.62 238 P
+2 F
+3.67 (@FOREACH classList) 306.48 238 P
+1 F
+1.53 ( iterates through the) 439.76 238 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.34 (loop twice, once for) 109 224 P
+0.34 (each class in the schema. Conditions are simply pieces of embedded) 208.99 224 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Perl code, and can be used lik) 109 210 T
+(e this:) 251.85 210 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(@FOREACH attrList \050$className eq \322Test\323\051 && $isListType) 117 196 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+1.57 (This iterates through the array v) 117 182 P
+1.57 (ariable attrList, and e) 278.19 182 P
+1.57 (x) 384.69 182 P
+1.57 (ecutes the body for which the) 390.51 182 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(latter condition is true.) 117 168 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 99 149 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(@IF ... @ELSIF .. @ELSE ... @END) 109 149 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(\245) 99 130 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+5.76 (@PERL) 109 130 P
+1 F
+2.4 ( - Embedding perl code. All statements preceded with) 145 130 P
+2 F
+5.76 (@PERL) 427.88 130 P
+1 F
+2.4 ( go completely) 463.88 130 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.34 (untranslated into the intermediate Perl code \336le. This allo) 109 116 P
+0.34 (ws the Jee) 387.1 116 P
+0.34 (v) 436.81 116 P
+0.34 (es user to utilize the) 442.63 116 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.97 (po) 109 102 P
+1.97 (wer of Perl - querying en) 120.7 102 P
+1.97 (vironment v) 250.35 102 P
+1.97 (ariables, writing to sock) 310.35 102 P
+1.97 (ets, creating UIs with) 431.45 102 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tkperl are only a fe) 109 88 T
+(w of the options. F) 199.34 88 T
+(or e) 289.49 88 T
+(xample,) 307.64 88 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 75.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@perl $userName = $ENV{\322USER\323};) 126 75.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(2:) 108 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@OPENFILE tmp) 128 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 701.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(// File : $currFile) 144 701.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 689.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(// Automatically created by $userName) 144 689.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+4.25 (Line 2 of Project.template sho) 90 671 P
+4.25 (ws the) 251.7 671 P
+2 F
+10.21 (@OPENFILE) 294.2 671 P
+10.21 ($className) 366.25 671 P
+1 F
+4.25 ( statement inside a) 438.25 671 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+1.18 (@FOREACH classList) 90 657 P
+1 F
+0.49 ( \050line 1\051 loop. This results in tw) 220.78 657 P
+0.49 (o \336les being opened, one for each) 375.43 657 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(class.) 90 643 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.11 (I ha) 90 624 P
+-0.11 (v) 107.97 624 P
+-0.11 (e found this set of k) 113.79 624 P
+-0.11 (e) 208.1 624 P
+-0.11 (yw) 213.25 624 P
+-0.11 (ords to be adequate in my line of w) 227.8 624 P
+-0.11 (ork - that\325) 396.09 624 P
+-0.11 (s wh) 443.19 624 P
+-0.11 (y I don\325) 465.35 624 P
+-0.11 (t need a) 502.9 624 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(library of template parsers too.) 90 610 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(5.2.3.) 72 582 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Intermediate Code) 116 582 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+0.51 (The template parser translates each statement in the template \336le to an intermediate perl \336le,) 90 563 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(which is then e) 90 549 T
+(v) 162.02 549 T
+(aluated. Consider the template -) 167.72 549 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 536.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@FOREACH classList) 126 536.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 524.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Name : $className) 128 524.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 512.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@FOREACH attrList) 128 512.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 500.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Attr: $attrName, $attrType) 144 500.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5:) 108 488.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@END) 128 488.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(6:) 108 476.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@END) 128 476.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(This template is translated to an intermediate perl code \336le lik) 90 458 T
+(e this -) 387.18 458 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 445.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+($ROOT->Visit\050\051;) 126 445.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 433.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(foreach $classList_i @classList {) 128 433.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 421.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+($classList_i->Visit\050\051;) 144 421.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 409.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(print \322Name : $className \134n\323) 144 409.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5:) 108 397.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(foreach $attrList_i @attrList {) 144 397.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(6:) 108 385.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+($attrList_i->Visit\050\051;) 162 385.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(7:) 108 373.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(print \322Attr: $attrName, $attrType\134n\323;) 162 373.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(8:) 108 361.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Ast::UnVisit\050\051;) 162 361.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(9:) 108 349.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 144 349.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(10:) 108 337.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Ast::UnVisit\050\051;) 144 337.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(11:) 108 325.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 128 325.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 12 Q
+1.2 (Visit\050\051) 90 307 P
+1 F
+0.5 ( is an instance method in the Ast class \050Perl supports OO constructs\051 that con) 140.4 307 P
+0.5 (v) 516.85 307 P
+0.5 (erts) 522.67 307 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.69 (all the properties of the AST node being visited to global perl v) 90 293 P
+1.69 (ariables. R) 413.91 293 P
+1.69 (OO) 466.44 293 P
+1.69 (T is visited) 483.29 293 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.31 (immediately upon entry) 90 279 P
+1.31 (, and since) 206.5 279 P
+2 F
+3.14 (classList) 264.41 279 P
+1 F
+1.31 ( is a property of the R) 329.21 279 P
+1.31 (OO) 441.24 279 P
+1.31 (T node, a global) 458.08 279 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (array v) 90 265 P
+-0.07 (ariable called classList is a) 123.28 265 P
+-0.07 (v) 251.39 265 P
+-0.07 (ailable for all subsequent lines. Line 1 of the template code) 257.09 265 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.39 (is translated to lines 2 and 3 in the intermediate \336le. The translator sets up an iterator \050with a) 90 251 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.05 (temporary v) 90 237 P
+1.05 (ariable classList_i\051, and for each iteration,) 149.07 237 P
+4 F
+2.52 (Visits) 360.64 237 P
+1 F
+1.05 ( the current class descriptor) 403.84 237 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.43 (object. This results in three more global v) 90 223 P
+0.43 (ariables becoming a) 292.67 223 P
+0.43 (v) 389.25 223 P
+0.43 (ailable \050for line 4 and later) 394.95 223 P
+0.43 (, in) 524.24 223 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the intermediate \336le\051 - attrName, attrT) 90 209 T
+(ype and isListT) 273 209 T
+(ype.) 346.7 209 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.02 (At the end of the loop, a piece of code represented by \322) 90 190 P
+2 F
+2.45 (UnVisit) 367.17 190 P
+1 F
+1.02 (\323 is inserted, to undo the) 417.57 190 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.7 (ef) 90 176 P
+0.7 (fect of) 99.02 176 P
+2 F
+1.68 (Visit) 134.41 176 P
+1 F
+0.7 (\050\051 - this destro) 170.41 176 P
+0.7 (ys global v) 240.04 176 P
+0.7 (ariables introduced by) 293.81 176 P
+2 F
+1.68 (Visit) 405.55 176 P
+1 F
+0.7 (, or restores them to) 441.55 176 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.28 (earlier v) 90 162 P
+3.28 (alues if the) 132.62 162 P
+3.28 (y e) 191.65 162 P
+3.28 (xisted prior to) 209.07 162 P
+2 F
+7.86 (Visit\050\051) 289.23 162 P
+1 F
+3.28 (. This implements dynamic scoping of) 339.63 162 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(property names.) 90 148 T
+0 0 0 1 0 0 0 K
+72 102 540 112 C
+0 0 0 1 0 0 0 K
+72 111 540 111 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(6.) 72 116.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(J) 99 116.67 T
+(ee) 105.79 116.67 T
+(v) 118.01 116.67 T
+(es - Characteristics of Implementation) 124.87 116.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+1.07 (The choice of Perl as a language of implementation has indeed been an important one. Jon) 90 86 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+0 X
+0 0 0 1 0 0 0 K
+0.78 (Bentle) 90 712 P
+0.78 (y\325) 121.15 712 P
+0.78 (s ideas on Little Languages [2] ha) 130.49 712 P
+0.78 (v) 297.55 712 P
+0.78 (e pro) 303.36 712 P
+0.78 (v) 328.29 712 P
+0.78 (en decisi) 334.11 712 P
+0.78 (v) 376.91 712 P
+0.78 (e - Jee) 382.73 712 P
+0.78 (v) 414.63 712 P
+0.78 (es is written in only 463) 420.45 712 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(lines of Perl \050including comments\051.) 90 698 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.16 (Perl has a strong suite of string handling functions, re) 90 679 P
+-0.16 (gular e) 344.99 679 P
+-0.16 (xpression f) 377.64 679 P
+-0.16 (acilities and associated) 430.35 679 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.04 (control structures - much more so than tools lik) 90 665 P
+1.04 (e le) 325.51 665 P
+1.04 (x, sed, tcl etc. This is useful for writing) 343.37 665 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.37 (quick and dirty speci\336cation parsers. When the input grammar is elaborate and strong syntax) 90 651 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.12 (checking is useful, I use a v) 90 637 P
+-0.12 (ariant of Berk) 221.96 637 P
+-0.12 (ele) 288.26 637 P
+-0.12 (y Y) 302.07 637 P
+-0.12 (acc, that outputs perl code [15]. The Perl/Y) 318.42 637 P
+-0.12 (acc) 524.02 637 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(combination is f) 90 623 T
+(ar more con) 167.88 623 T
+(v) 224.71 623 T
+(enient than a C/le) 230.53 623 T
+(x/yacc combination, and not much slo) 314.68 623 T
+(wer) 497.03 623 T
+(.) 514.36 623 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.33 (The T) 90 604 P
+2.33 (emplate P) 120.48 604 P
+2.33 (arser e) 170.29 604 P
+2.33 (xploits Perl by simply translating each line in the template \336le to) 204.08 604 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.19 (corresponding perl code, and then e) 90 590 P
+2.19 (v) 271.95 590 P
+2.19 (aluating the intermediate \336le. The adv) 277.65 590 P
+2.19 (antage of this) 470.96 590 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.42 (approach is that Jee) 90 576 P
+1.42 (v) 188.26 576 P
+1.42 (es simply uses the Perl interpreter to pro) 194.08 576 P
+1.42 (vide the entire frame) 397.46 576 P
+1.42 (w) 501.05 576 P
+1.42 (ork of) 509.59 576 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.22 (v) 90 562 P
+3.22 (ariables, associati) 95.7 562 P
+3.22 (v) 183.27 562 P
+3.22 (e arrays, \337o) 189.09 562 P
+3.22 (w of control etc. Ev) 251.54 562 P
+3.22 (en the v) 359.22 562 P
+3.22 (ariable interpolation in the) 403.36 562 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.84 (template code is done by Perl. Further) 90 548 P
+2.84 (, the template can be easily deb) 289.55 548 P
+2.84 (ugged, since the) 456.66 548 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.03 (template is translated to Perl with appropriate line number information, and the Perl source) 90 534 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.15 (le) 90 520 P
+2.15 (v) 98.36 520 P
+2.15 (el deb) 104.18 520 P
+2.15 (ugger can be used on the intermediate \336le. Perl5 supports dynamically loadable) 135.09 520 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.74 (modules, and packages such as Database adaptors, UI modules etc., that are freely a) 90 506 P
+0.74 (v) 502.31 506 P
+0.74 (ailable) 508.01 506 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(on the Internet [16].) 90 492 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (Jee) 90 473 P
+-0.07 (v) 105.02 473 P
+-0.07 (es runs unchanged on an) 110.84 473 P
+-0.07 (y platform to which Perl5 has been ported - this pro) 228.37 473 P
+-0.07 (vides a stable) 475.48 473 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(and uniform language base on a huge number of hardw) 90 459 T
+(are and softw) 354.82 459 T
+(are platforms.) 419.34 459 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.15 (The template syntax is minimal - it is e) 90 440 P
+0.15 (xpected that the user can e) 278.35 440 P
+0.15 (xploit the) 405.88 440 P
+2 F
+0.36 (@PERL) 454.85 440 P
+1 F
+0.15 ( statement) 490.85 440 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.43 (if some e) 90 426 P
+1.43 (xtra feature is required. The syntax also enables great bre) 136.67 426 P
+1.43 (vity of e) 423.81 426 P
+1.43 (xpression - the) 466.49 426 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(template code is simply written as it is required to appear in the generated output.) 90 412 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.4 (I decided to a) 90 393 P
+0.4 (v) 155.93 393 P
+0.4 (oid creating a class hierarch) 161.69 393 P
+0.4 (y of AST node objects, and to mak) 297.18 393 P
+0.4 (e an AST node) 467.16 393 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.73 (the simplest possible - a list of properties. This k) 90 379 P
+1.73 (eeps the AST frame) 338.77 379 P
+1.73 (w) 439.29 379 P
+1.73 (ork of Jee) 447.84 379 P
+1.73 (v) 498.31 379 P
+1.73 (es v) 504.13 379 P
+1.73 (ery) 524.68 379 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.97 (simple and minimal. A good side ef) 90 365 P
+0.97 (fect of this decision is that it is v) 267.18 365 P
+0.97 (ery easy to implement) 430.77 365 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(additional annotations in a schema \336le, such as these -) 90 351 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 338.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(class Employee {) 126 338.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 326.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(string name, key=true, access=readonly;) 144 326.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 314.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int salary, access=readwrite;) 144 314.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 302.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 128 302.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+2.69 (Each attrib) 90 284 P
+2.69 (ute de\336nition here has a type and a name, and an optional list of additional) 144.77 284 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.83 (properties that can be e) 90 270 P
+1.83 (xploited in the template \336le. The AST scheme in Jee) 208.43 270 P
+1.83 (v) 476.54 270 P
+1.83 (es treats all) 482.36 270 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.24 (properties of an AST node equally) 90 256 P
+1.24 (, whether the) 261.06 256 P
+1.24 (y are k) 325.68 256 P
+1.24 (e) 360.69 256 P
+1.24 (yw) 365.84 256 P
+1.24 (ords in the original speci\336cation) 380.38 256 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(language, or user) 90 242 T
+(-de\336ned properties. So, the template can ha) 172.07 242 T
+(v) 379.79 242 T
+(e constructs lik) 385.61 242 T
+(e) 458.15 242 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 229.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@FOREACH attrList) 126 229.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 217.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+($attrType get_$attrName\050\051;) 144 217.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 205.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@IF \050$access eq readwrite\051) 128 205.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 193.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(virtual int set_$attrName\050\051;) 144 193.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5:) 108 181.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@ENDIF) 128 181.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(6:) 108 169.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(@END .. foreach attrList) 128 169.33 T
+0 0 0 1 0 0 0 K
+72 124 540 134 C
+0 0 0 1 0 0 0 K
+72 133 540 133 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(7.) 72 138.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Modifying Generated Code) 99 138.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+0.01 (Dept.h and Emplo) 90 108 P
+0.01 (yee.h are e) 177.55 108 P
+0.01 (xamples of generated code. What does one do if the programmer) 229.02 108 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 (w) 90 94 P
+2 (ants to o) 98.54 94 P
+2 (v) 143.02 94 P
+2 (erride something in one of the generated \336les? One shouldn\325) 148.84 94 P
+2 (t edit an) 456.87 94 P
+2 (y of the) 499.35 94 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.73 (generated \336les, since it w) 90 80 P
+0.73 (ould be o) 214.46 80 P
+0.73 (v) 260.41 80 P
+0.73 (erwritten e) 266.23 80 P
+0.73 (v) 318.31 80 P
+0.73 (ery time Jee) 324.13 80 P
+0.73 (v) 383.28 80 P
+0.73 (es is run. There is no uni) 389.1 80 P
+0.73 (v) 511.52 80 P
+0.73 (ersal) 517.34 80 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(approach to this problem. The tw) 90 712 T
+(o follo) 249.19 712 T
+(wing schemes w) 280.56 712 T
+(ork well in my line of w) 359.76 712 T
+(ork.) 475.63 712 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(7.1.) 72 684 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Using CPP) 106 684 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+1.39 (If you are generating C/C++ code, insert #include statements to include some stub \336les of) 90 665 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(your o) 90 651 T
+(wn. F) 120.7 651 T
+(or instance, Emplo) 147.85 651 T
+(yee.h could look lik) 238.06 651 T
+(e this) 333.26 651 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 638.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(struct Employee {) 126 638.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 626.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(#include \322Employee_stub.h\323) 144 626.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 614.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(....) 144 614.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 602.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(};) 128 602.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+-0.05 (Emplo) 90 584 P
+-0.05 (yee_stub) 121.88 584 P
+-0.05 (.h w) 164.06 584 P
+-0.05 (ould then ha) 184.56 584 P
+-0.05 (v) 243.55 584 P
+-0.05 (e declarations speci\336c to struct Emplo) 249.37 584 P
+-0.05 (yee. Since Jee) 431.99 584 P
+-0.05 (v) 499.24 584 P
+-0.05 (es does) 505.06 584 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(not kno) 90 570 T
+(w about Emplo) 126.04 570 T
+(yee_stub) 199.25 570 T
+(.h, it w) 241.43 570 T
+(ould not get o) 274.64 570 T
+(v) 340.8 570 T
+(erwritten.) 346.62 570 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Another approach is to use a CPP macro lik) 90 551 T
+(e this:) 299.86 551 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 538.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(struct Employee {) 126 538.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 526.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(EMPLOYEE_SPECIAL) 144 526.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 514.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(....) 144 514.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 502.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(};) 128 502.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(Else) 90 484 T
+(where in the user\325) 110.36 484 T
+(s non-generated code, one could say) 196.01 484 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 471.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(#define EMPLOYEE_SPECIAL) 126 471.33 T
+4 F
+(... employee specific declaration ...) 276 471.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(2:) 108 459.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(#include <Employee.h>) 128 459.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 447.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(...) 128 447.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+-0.19 (\322T) 90 429 P
+-0.19 (aming C++\323 , by Jiri Soukup [12], de) 101.7 429 P
+-0.19 (v) 279.25 429 P
+-0.19 (elops a code generator for implementing patterns that) 285.07 429 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(utilizes some of these techniques, and more.) 90 415 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(7.2.) 72 387 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Generated code and C++) 106 387 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+-0.34 (This problem can be solv) 90 368 P
+-0.34 (ed much more ele) 209.79 368 P
+-0.34 (g) 294.25 368 P
+-0.34 (antly with object oriented languages such as C++.) 300.19 368 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Consider this piece of generated code:) 90 349 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 336.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(//File: Employee.h) 126 336.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 324.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(class Employee_Base {) 128 324.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 312.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(...) 144 312.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 300.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(virtual int set_salary\050int aSalary\051 {_salary = aSalary};) 144 300.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5:) 108 288.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(};) 128 288.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+0.05 (Note that a class called Emplo) 90 270 P
+0.05 (yee_Base is generated, not class Emplo) 235.78 270 P
+0.05 (yee. In the hand-written) 425.21 270 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(code, the programmer writes) 90 256 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 10 Q
+(1:) 108 243.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(//File: Employee.C) 126 243.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2:) 108 231.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(class Employee : public Employee_Base{) 128 231.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3:) 108 219.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(virtual int set_salary\050int aSalary\051;) 144 219.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4:) 108 207.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(};) 128 207.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(5:) 108 195.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Employee::set_salary \050int aSalary\051 {) 128 195.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(6:) 108 183.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(if \050aSalary <= MIN_SALARY\051 {) 144 183.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(7:) 108 171.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(... print warning ..) 162 171.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(8:) 108 159.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(} else {) 144 159.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(9:) 108 147.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Employee_Base::set_salary\050aSalary\051;) 162 147.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(10:) 108 135.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(GenerateUpdateEvent\050\051;) 162 135.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(11:) 108 123.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 144 123.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(12:) 108 111.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 128 111.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(Member functions in C++ are the natural w) 90 93 T
+(ay of implementing o) 298.38 93 T
+(v) 401.2 93 T
+(errides.) 407.02 93 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "10" 10
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 696 540 706 C
+0 0 0 1 0 0 0 K
+72 705 540 705 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(8.) 72 710.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(J) 99 710.67 T
+(ee) 105.79 710.67 T
+(v) 118.01 710.67 T
+(es - other uses) 124.87 710.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+0.78 (This section discusses some of the w) 90 680 P
+0.78 (ays in which I ha) 271.21 680 P
+0.78 (v) 356.08 680 P
+0.78 (e used the tool. Each of these inputs) 361.9 680 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.96 (gets its o) 90 666 P
+0.96 (wn speci\336cation parser) 134.3 666 P
+0.96 (, and corresponding template \336les. The user can specify the) 246.39 666 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.14 (name of a speci\336cation parser on the command line \050\322jee) 90 652 P
+-0.14 (v) 362.06 652 P
+-0.14 (es -s DbSchema\323\051, and Jee) 367.88 652 P
+-0.14 (v) 495.32 652 P
+-0.14 (es looks) 501.14 652 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(in a set of library paths for that module.) 90 638 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 99 619 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.44 (Automatic man pages from C++ header \336les - The programmer writes C++ comments) 109 619 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.04 (follo) 109 605 P
+1.04 (wing an accepted documentation con) 131.37 605 P
+1.04 (v) 313 605 P
+1.04 (ention. These are recognized and stripped by) 318.82 605 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.98 (the \322SchemaP) 109 591 P
+3.98 (arser\323 and made a) 180.45 591 P
+3.98 (v) 278.44 591 P
+3.98 (ailable to the template dri) 284.14 591 P
+3.98 (v) 422.4 591 P
+3.98 (en back) 428.23 591 P
+3.98 (end. A \322code) 469.07 591 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(template\323 is then used to produce trof) 109 577 T
+(f \336les, FrameMak) 289.34 577 T
+(er mif \336les and/or T) 374.87 577 T
+(eX \336les.) 470.02 577 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 99 558 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.2 (ASCII to FrameMak) 109 558 P
+-0.2 (er con) 207.8 558 P
+-0.2 (v) 236.78 558 P
+-0.2 (ersion - A similar approach can be used to con) 242.6 558 P
+-0.2 (v) 463.26 558 P
+-0.2 (ert a document) 469.08 558 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.37 (in ASCII \050as sho) 109 544 P
+1.37 (wn on the left\051, to a speci\336c w) 193.13 544 P
+1.37 (ord processor\325) 347.88 544 P
+1.37 (s format. Using dif) 417.56 544 P
+1.37 (ferent) 512.02 544 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.6 (templates, the same input document can be used to generate T) 109 530 P
+1.6 (e) 421.79 530 P
+1.6 (x, FrameMak) 426.94 530 P
+1.6 (er \050mml\051,) 493.07 530 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(trof) 109 516 T
+(f etc.) 126.03 516 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+(Figur) 144 321.33 T
+(e 4.) 167.71 321.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(WYSIWIG documentation fr) 198 321.33 T
+(om ASCII annotations) 322.82 321.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(\245) 99 298 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Finite State Machine code, from a speci\336cation \336le describing state transitions [8].) 109 298 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 99 279 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Generating form letters) 109 279 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 99 260 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.77 (Generating User Interf) 109 260 P
+1.77 (aces - Generating Motif UIL \336les and associated Motif code to) 221.04 260 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.49 (pro) 109 246 P
+4.49 (vide a spreadsheet lik) 124.82 246 P
+4.49 (e editing/updating interf) 241.8 246 P
+4.49 (ace for an) 366.64 246 P
+4.49 (y object, or pro) 422.73 246 P
+4.49 (viding) 509.33 246 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(generalized screen printing capabilities to UI screens [13].) 109 232 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 99 213 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (The template doesn\325) 109 213 P
+0.3 (t ha) 207.36 213 P
+0.3 (v) 225.08 213 P
+0.3 (e to necessarily) 230.9 213 P
+0 0 0 1 0 0 0 K
+339.45 211.8 308.77 211.8 2 L
+V
+0.6 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (output) 308.77 213 P
+0.3 ( an) 339.45 213 P
+0.3 (y code. The template \336le could simply) 353.89 213 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.84 (ha) 109 199 P
+0.84 (v) 120.09 199 P
+0.84 (e Perl code to display the class-hierarch) 125.91 199 P
+0.84 (y using the tkPerl e) 321.49 199 P
+0.84 (xtension. When Jee) 417.32 199 P
+0.84 (v) 512.34 199 P
+0.84 (es is) 518.16 199 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(run, the hierarch) 109 185 T
+(y is displayed using Tk widgets.) 187.91 185 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 99 166 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.77 (Client-Serv) 109 166 P
+0.77 (er stubs - similar to rpcgen. Jee) 164.15 166 P
+0.77 (v) 318.1 166 P
+0.77 (es is used to produce the code necessary for) 323.92 166 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.46 (marshalling and unmarshalling of ar) 109 152 P
+0.46 (guments to a remote procedure, or to create an XDR) 284.6 152 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(stream.) 109 138 T
+0 0 0 1 0 0 0 K
+72 72 540 720 C
+87.75 334 524.25 493 C
+0 0 0 1 0 0 0 K
+340.17 346 474.17 488 R
+0 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+2 Z
+N
+337.83 349 471.83 491 R
+7 X
+V
+0 X
+N
+140.17 346 274.17 488 R
+V
+N
+137.83 349 271.83 491 R
+7 X
+V
+0 X
+N
+348.75 355 452.17 482 R
+7 X
+V
+0 12 Q
+0 X
+(Sample header) 366.75 474 T
+1 F
+(This is body te) 363.75 455 T
+(xt.) 434.57 455 T
+(\245) 375.75 436 T
+(point 1) 385.75 436 T
+(\245) 375.75 417 T
+(point 2) 385.75 417 T
+(.h) 170.72 472.67 T
+(Sample header) 170.72 453.67 T
+(.bo) 170.72 434.67 T
+(This is body te) 170.72 415.67 T
+(xt.) 241.55 415.67 T
+(.b) 170.72 396.67 T
+(u) 179.48 396.67 T
+(point 1) 170.72 377.67 T
+(point 2) 170.72 358.67 T
+307.86 428 310.7 428 2 L
+4 H
+0 Z
+3 X
+N
+90 450 2 2 307.86 428 G
+310.7 428 309.86 430.31 317.91 428 309.86 425.69 4 Y
+N
+310.7 428 309.86 430.31 317.91 428 309.86 425.69 4 Y
+V
+293.17 428 307.86 428 2 L
+2 Z
+N
+0 0 0 1 0 0 0 K
+72 72 540 720 C
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "11" 11
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 696 540 706 C
+0 0 0 1 0 0 0 K
+72 705 540 705 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(9.) 72 710.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Related w) 99 710.67 T
+(ork) 158.35 710.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+3.62 (Craig Clea) 90 680 P
+3.62 (v) 145.04 680 P
+3.62 (eland refers to three tools \050Stage, PG2, W) 150.86 680 P
+3.62 (OODS\051 for) 376.39 680 P
+3 F
+3.62 (b) 440.28 680 P
+3.62 (uilding) 446.04 680 P
+1 F
+3.62 ( application) 480.05 680 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.34 (generators [3,4]. The primiti) 90 666 P
+0.34 (v) 227.03 666 P
+0.34 (es pro) 232.85 666 P
+0.34 (vided by back ends of these tools are practically identical) 262 666 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.84 (to those pro) 90 652 P
+0.84 (vided by Jee) 148.16 652 P
+0.84 (v) 209.53 652 P
+0.84 (es. Jee) 215.35 652 P
+0.84 (v) 247.21 652 P
+0.84 (es pro) 253.03 652 P
+0.84 (vides the bre) 282.68 652 P
+0.84 (vity of W) 345.38 652 P
+0.84 (OODS, and a lot more po) 392.94 652 P
+0.84 (wer) 519.49 652 P
+0.84 (,) 537 652 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.52 (due to Perl. The front end of Stage is a lot more po) 90 638 P
+1.52 (werful - one simply needs to gi) 351.55 638 P
+1.52 (v) 509.67 638 P
+1.52 (e the) 515.49 638 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.02 (grammar of the input language similar to yacc; there is no need to write an) 90 624 P
+-0.02 (y code. This mak) 447.52 624 P
+-0.02 (es) 530 624 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.29 (Stage a meta generator) 90 610 P
+-0.29 (. It w) 198.09 610 P
+-0.29 (as decided to k) 222.38 610 P
+-0.29 (eep things simple - most of my speci\336cation parsers) 293.03 610 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(are within 100 lines of Perl - so, the meta-speci\336cation approach w) 90 596 T
+(as not tak) 411.16 596 T
+(en.) 457.03 596 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.46 (Maseiro and Meira [10] classify application generators as SDSA \050Single Domain Single) 90 577 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.18 (Application\051 and MDMA \050Multiple Domain Multiple Application\051. Jee) 90 563 P
+-0.18 (v) 430.45 563 P
+-0.18 (es doesn\325) 436.27 563 P
+-0.18 (t \336t either of) 480.86 563 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.32 (these cate) 90 549 P
+0.32 (gorizations - it accepts the name of an) 137.12 549 P
+0.32 (y one of a number of speci\336cation parsers on) 321.48 549 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the command line, unlik) 90 535 T
+(e a typical SDSA lik) 206.54 535 T
+(e yacc, whose input syntax is \336x) 305.09 535 T
+(ed.) 460.56 535 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.27 (The OPLA project [1] has an architecture almost identical to Jee) 90 516 P
+0.27 (v) 401.68 516 P
+0.27 (es, e) 407.5 516 P
+0.27 (xcept that xlisp \050a Lisp) 428.92 516 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.02 (v) 90 502 P
+-0.02 (ariant\051 is used instead of Perl. Jee) 95.7 502 P
+-0.02 (v) 256.27 502 P
+-0.02 (es le) 262.09 502 P
+-0.02 (v) 283.44 502 P
+-0.02 (erages all the adv) 289.26 502 P
+-0.02 (antages of Perl, such as portability) 372.55 502 P
+-0.02 (,) 537 502 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.86 (string handling, deb) 90 488 P
+5.86 (ugging, e) 197.13 488 P
+5.86 (xtensibility) 247.47 488 P
+5.86 (, object-orientation etc. This is a lot more) 300.7 488 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.42 (functionality than an) 90 474 P
+1.42 (y one lisp implementation. The template \336le in Jee) 191.98 474 P
+1.42 (v) 446.02 474 P
+1.42 (es is considerably) 451.84 474 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(more compact.) 90 460 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.14 (StP \050Softw) 90 441 P
+1.14 (are through Pictures\051 [11], a commercially a) 143.36 441 P
+1.14 (v) 362.24 441 P
+1.14 (ailable CASE tool from Interacti) 367.94 441 P
+1.14 (v) 528.85 441 P
+1.14 (e) 534.67 441 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.8 (De) 90 427 P
+1.8 (v) 103.69 427 P
+1.8 (elopment En) 109.51 427 P
+1.8 (vironments contains a query and reporting system that allo) 171.83 427 P
+1.8 (ws customized) 467.21 427 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.14 (code to be produced. The tool utilizes a C-lik) 90 413 P
+1.14 (e custom language, and a set of functions for) 315.95 413 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(accessing the schema de\336nitions \050generated by a front end graphic interf) 90 399 T
+(ace\051.) 437.8 399 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.04 (Persistence [17] is another e) 90 380 P
+0.04 (xample of a commercially a) 225.27 380 P
+0.04 (v) 359.15 380 P
+0.04 (ailable tool that generates code from) 364.85 380 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(a schema de\336nition. This code is not con\336gurable at all.) 90 366 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.62 (GENO) 90 347 P
+0.62 (A [6], is an implementation of the general concept used by Jee) 122.9 347 P
+0.62 (v) 429.41 347 P
+0.62 (es - it parses an input) 435.23 347 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.22 (syntax \050C++ \336les\051, mak) 90 333 P
+0.22 (es it a) 204.08 333 P
+0.22 (v) 232.28 333 P
+0.22 (ailable as an AST to a back-end. Unlik) 237.98 333 P
+0.22 (e Jee) 425.37 333 P
+0.22 (v) 448.95 333 P
+0.22 (es, this tool is not) 454.77 333 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.39 (used to generate code - it pro) 90 319 P
+0.39 (vides a custom query language to query semantic aspects of the) 231.47 319 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(input C++ code.) 90 305 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.59 (Se) 90 286 P
+0.59 (v) 101.7 286 P
+0.59 (eral books de) 107.52 286 P
+0.59 (v) 172.39 286 P
+0.59 (elop custom code generators, b) 178.21 286 P
+0.59 (ut do not mak) 329.32 286 P
+0.59 (e them con\336gurable. There is) 397.32 286 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.38 (still something to be learned from the type of code that is produced, and the input syntax.) 90 272 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.93 (Examples are \322C Database De) 90 258 P
+1.93 (v) 242.71 258 P
+1.93 (elopment\323 by Al Ste) 248.54 258 P
+1.93 (v) 352.36 258 P
+1.93 (ens [14], and \322T) 358.18 258 P
+1.93 (aming C++\323 by Jiri) 441 258 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Soukup [12].) 90 244 T
+0 0 0 1 0 0 0 K
+72 198 540 208 C
+0 0 0 1 0 0 0 K
+72 207 540 207 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(10.) 72 212.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Refer) 99 212.67 T
+(ences) 132.17 212.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+([1]) 72 182 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.19 (A.Aimar) 99 182 P
+0.19 (, A.Khodabandeh, P) 140.84 182 P
+0.19 (.P) 236.88 182 P
+0.19 (alazzi, B.Rousseau, \322) 246.37 182 P
+0.19 (A Con\336gurable Code Generator for OO) 348.1 182 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Methodologies\323 a) 99 168 T
+(v) 184.42 168 T
+(ailable at) 190.12 168 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(http://www1.cern.ch/W) 99 154 T
+(ebMak) 211.36 154 T
+(er/e) 244.56 154 T
+(xamples/CHEP94_code) 262.37 154 T
+(gene_1/www/code) 376.85 154 T
+(gene_1.html) 466.64 154 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([2]) 72 135 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Jon Bentle) 99 135 T
+(y) 149.82 135 T
+(, \322Little Languages\323,) 155.04 135 T
+3 F
+(Mor) 258.68 135 T
+(e Pr) 278.9 135 T
+(o) 298.69 135 T
+(gr) 304.57 135 T
+(amming P) 315.06 135 T
+(earls) 363.1 135 T
+1 F
+(, col. 9, ISBN 0-201-10331-1) 387.1 135 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([3]) 72 116 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(J. Craig Clea) 99 116 T
+(v) 161.09 116 T
+(eland, \322Building Application Generators\323,) 166.91 116 T
+3 F
+(IEEE Softwar) 372.88 116 T
+(e) 438.77 116 T
+(,) 443.98 116 T
+1 F
+(July 1988) 449.98 116 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([4]) 72 97 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.18 (J. Craig Clea) 99 97 P
+0.18 (v) 161.46 97 P
+0.18 (eland and Chandra M.R. Kintala, \322T) 167.27 97 P
+0.18 (ools for b) 341.87 97 P
+0.18 (uilding application generators\323,) 387.99 97 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(A) 99 83 T
+(T&T T) 105.89 83 T
+(ec) 137.14 83 T
+(hnical J) 147.61 83 T
+(ournal) 185.64 83 T
+1 F
+(, July/August 1988, v) 217.64 83 T
+(.67, pp 46-58.) 319.87 83 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "12" 12
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+0 X
+0 0 0 1 0 0 0 K
+([5]) 72 712 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.28 (P) 99 712 P
+0.28 (. De) 104.34 712 P
+0.28 (v) 124.32 712 P
+0.28 (anb) 130.02 712 P
+0.28 (u, \322Research Issues with Application Generators\323,) 147.1 712 P
+3 F
+0.28 (Pr) 393.41 712 P
+0.28 (oceedings of the 6th Annual) 404.87 712 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(W) 99 698 T
+(orkshop on Softwar) 107.89 698 T
+(e Reuse) 201.46 698 T
+1 F
+(, \050copies a) 238.44 698 T
+(v) 287.18 698 T
+(ailable from prem@research.att.com\051) 292.88 698 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([6]) 72 679 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.4 (P) 99 679 P
+0.4 (. De) 104.34 679 P
+0.4 (v) 124.44 679 P
+0.4 (anb) 130.14 679 P
+0.4 (u, \322GENO) 147.22 679 P
+0.4 (A/GENII - a customizable, language- and front-end- independent code) 197.86 679 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7.51 (analyzer\323,) 99 665 P
+3 F
+7.51 (Pr) 158.48 665 P
+7.51 (oceedings of the F) 169.94 665 P
+7.51 (ourteenth International Confer) 279.53 665 P
+7.51 (ence on Softwar) 442.77 665 P
+7.51 (e) 534.67 665 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Engineering) 99 651 T
+1 F
+(, 1992) 158.33 651 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([7]) 72 632 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.15 (Norman Fenton, \322Ho) 99 632 P
+1.15 (w Ef) 202.65 632 P
+1.15 (fecti) 226.49 632 P
+1.15 (v) 247.51 632 P
+1.15 (e Are Softw) 253.33 632 P
+1.15 (are Engineering Methods?\323, 22, Aug. \32493, pp.) 313.49 632 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(141-146) 99 618 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([8]) 72 599 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+9.16 (Pieter A. Hintjens, \322Libero\323 \050FSM generator\051 documentation, a) 99 599 P
+9.16 (v) 466.82 599 P
+9.16 (ailable from) 472.52 599 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(pahint@enunet.be) 99 585 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([9]) 72 566 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Ralph Johnson, \322Designing Reusable Classes\323, a) 99 566 T
+(v) 333.07 566 T
+(ailable by anon) 338.77 566 T
+(ymous ftp at) 411.91 566 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(speedy) 99 552 T
+(.cs.uiuc.edu:/pub/papers/frame) 131.54 552 T
+(w) 278.88 552 T
+(orks) 287.42 552 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([10]) 72 533 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.84 (P) 99 533 P
+0.84 (.C. Masiero and C.A.A. Meira, \322De) 104.34 533 P
+0.84 (v) 279.19 533 P
+0.84 (elopment and Instantiation of a Generic Application) 285.01 533 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Generator\323,) 99 519 T
+3 F
+(The J) 158.3 519 T
+(ournal of Systems and Softwar) 184.33 519 T
+(e) 330.56 519 T
+1 F
+(, 23, Oct 1993, pp.27-37) 335.89 519 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([11]) 72 500 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+5.66 (Softw) 99 500 P
+5.66 (are through Pictures \050StP\051, Interacti) 127.55 500 P
+5.66 (v) 320.2 500 P
+5.66 (e De) 326.02 500 P
+5.66 (v) 353.7 500 P
+5.66 (elopment En) 359.52 500 P
+5.66 (vironments, User and) 425.69 500 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Reference manual.) 99 486 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([12]) 72 467 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.55 (Jiri Soukup,) 99 467 P
+3 F
+1.55 (T) 163.11 467 P
+1.55 (aming C++, P) 168.67 467 P
+1.55 (attern Classes and P) 241.35 467 P
+1.55 (er) 344.71 467 P
+1.55 (sistence for Lar) 354.58 467 P
+1.55 (g) 432.57 467 P
+1.55 (e Pr) 438.45 467 P
+1.55 (ojects) 459.79 467 P
+1 F
+1.55 (, Addison-) 487.79 467 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(W) 99 453 T
+(esle) 109.37 453 T
+(y) 127.85 453 T
+(, ISBN 0-201-52826-6) 133.07 453 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([13]) 72 434 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Sriram Srini) 99 434 T
+(v) 157.7 434 T
+(asan, \322Generalized Screen Printing\323,) 163.4 434 T
+3 F
+(The X J) 342.68 434 T
+(ournal) 379.04 434 T
+1 F
+(, to appear in the) 411.05 434 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(May/June \32495 issue) 99 420 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([14]) 72 401 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Al Ste) 99 401 T
+(v) 129.04 401 T
+(ens,) 134.86 401 T
+3 F
+(C Database De) 156.85 401 T
+(velopment) 230.66 401 T
+1 F
+(, MIS Press, ISBN 1-55828-135-5) 279.98 401 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([15]) 72 382 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(perl-byacc, a) 99 382 T
+(v) 160.73 382 T
+(ailable from ftp.sterling.com:/local/perl-byacc.tar) 166.43 382 T
+(.Z) 402.72 382 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([16]) 72 363 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Perl Frequently Ask) 99 363 T
+(ed Questions, a) 195.54 363 T
+(v) 268.96 363 T
+(ailable from) 274.66 363 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(http://www) 99 349 T
+(.metronet.com/1h/perlinfo) 152.89 349 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([17]) 72 330 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Persistence,) 99 330 T
+3 F
+(User Manual) 158.99 330 T
+1 F
+(. Contact information@persistence.com) 222.65 330 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([18]) 72 311 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Larry W) 99 311 T
+(all and Randal Schw) 139.02 311 T
+(artz,) 237.89 311 T
+3 F
+(Pr) 261.88 311 T
+(o) 273.34 311 T
+(gr) 279.22 311 T
+(amming P) 289.7 311 T
+(erl) 337.74 311 T
+1 F
+(, O\325Reilly & Associates, Inc.,) 351.07 311 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ISBN) 99 297 T
+(0-937175-64-1) 129.34 297 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([19]) 72 278 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(P) 99 278 T
+(.G. W) 104.34 278 T
+(odehouse :-\051) 132.37 278 T
+0 0 0 1 0 0 0 K
+72 232 540 242 C
+0 0 0 1 0 0 0 K
+72 241 540 241 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(11.) 72 246.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A) 99 246.67 T
+(v) 107.71 246.67 T
+(ailability) 114.57 246.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(Jee) 90 216 T
+(v) 105.02 216 T
+(es is in the public domain, and a) 110.84 216 T
+(v) 265.26 216 T
+(ailable from .) 270.96 216 T
+3 F
+(... T) 335.28 216 T
+(O BE DECIDED ..) 353.74 216 T
+1 F
+(.) 444.72 216 T
+0 0 0 1 0 0 0 K
+72 170 540 180 C
+0 0 0 1 0 0 0 K
+72 179 540 179 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(12.) 72 184.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Ackno) 99 184.67 T
+(wledgments) 137.75 184.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(Mik) 90 154 T
+(e Curry for his ideas and encouragement.) 109.88 154 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Anil Ananthasw) 90 135 T
+(amy) 168.2 135 T
+(, Rao Ak) 188.09 135 T
+(ella, for being patient sounding boards.) 230.96 135 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TCSI, for an e) 90 116 T
+(xciting de) 158.47 116 T
+(v) 205.84 116 T
+(elopment en) 211.66 116 T
+(vironment.) 270.17 116 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "13" 13
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 13
+%%DocumentFonts: Times-Bold
+%%+ Times-Roman
+%%+ Courier
+%%+ Times-Italic
+%%+ Courier-Oblique
+%%EOF

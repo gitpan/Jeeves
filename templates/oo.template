@@ -1,0 +1,70 @@
+@//
+@//----------------------------------------------------------------------
+@// This file produces one .C file, and as many .h files as there are
+@// classes in the schema file (Test.sc)
+@// All the generated files have a prefix "Auto", for easy identification
+@//                                                 ... Sriram
+@//----------------------------------------------------------------------
+@//
+@//
+@perl $pwd = $ENV{"PWD"};   # Demonstrating the use of interspersing perl code
+@perl $user = $ENV{"USER"};
+@perl $classCount = 0;      
+@foreach classList          
+@perl ++$classCount;
+@//-------------------------------------------------------------------------
+@// Note: we are opening a new ".h" file within the foreach above ...
+@openfile Auto${className}.h 
+#ifndef _Auto${className}_h_
+#define _Auto${className}_h_
+#include <stdio.h>
+
+// This file is produced automatically. 
+// File : '$pwd/Auto${className}.h'
+// User : "$user"
+
+class $className {
+
+@foreach attrList
+	$attrType $attrName;
+@end  
+	// Methods
+	Create();
+      private : 
+	$className();
+	~$className();
+      public:
+	// Accessor Methods;
+@foreach attrList
+	$attrType	get_${attrName}() = const;
+	void		set_${attrName}($attrType);
+@end .. attrList
+}
+#endif
+@end .. classList
+@//
+@//-------------------------------------------------------------------------
+@//
+@openfile AutoTest.C 
+// This file is produced automatically. 
+// File : test.C
+// User : $user
+
+@foreach classList
+#ifndef _${className}_h_
+#include <${className}.h>
+#endif
+@end .. classList
+@foreach classList
+@foreach attrList
+$attrType
+${className}::get_${attrName} () {
+	return ${attrName};
+}
+void
+${className}::set_${attrName} ($attrType a${attrName}) {
+	${attrName} = a${attrName};
+}
+@end
+@end .. classList
+@perl print STDERR "Number  of classes in schema file : $classCount\n";
